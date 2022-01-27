@@ -1,0 +1,1223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="alibabaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Bus">
+          <Key>
+            <PropertyRef Name="bus_id" />
+          </Key>
+          <Property Name="bus_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="bus_type" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="departure_terminal" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="destination_terminal" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="trip_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="City">
+          <Key>
+            <PropertyRef Name="city_id" />
+          </Key>
+          <Property Name="city_id" Type="int" Nullable="false" />
+          <Property Name="country_id" Type="int" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="1" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Company">
+          <Key>
+            <PropertyRef Name="company_id" />
+          </Key>
+          <Property Name="company_id" Type="int" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="address" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Country">
+          <Key>
+            <PropertyRef Name="country_id" />
+          </Key>
+          <Property Name="country_id" Type="int" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Facility">
+          <Key>
+            <PropertyRef Name="facility_id" />
+          </Key>
+          <Property Name="facility_id" Type="int" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="description" Type="nvarchar" MaxLength="50" />
+          <Property Name="hotel_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Flight">
+          <Key>
+            <PropertyRef Name="flight_id" />
+          </Key>
+          <Property Name="flight_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ticket_type" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="flight_class" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="departure_airport" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="destination_airport" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="load_amount" Type="int" Nullable="false" />
+          <Property Name="trip_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Foreign">
+          <Key>
+            <PropertyRef Name="foreign_id" />
+          </Key>
+          <Property Name="foreign_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="travel_time" Type="time" Precision="7" Nullable="false" />
+          <Property Name="stop_number" Type="int" Nullable="false" />
+          <Property Name="stop_path" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="flight_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Hotel">
+          <Key>
+            <PropertyRef Name="hotel_id" />
+          </Key>
+          <Property Name="hotel_id" Type="int" Nullable="false" />
+          <Property Name="ratiing" Type="int" />
+          <Property Name="popularity" Type="int" Nullable="false" />
+          <Property Name="type" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="country" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="city" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="address" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="room_capacity" Type="int" Nullable="false" />
+          <Property Name="empty_room" Type="int" Nullable="false" />
+          <Property Name="description" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="HotelOrder">
+          <Key>
+            <PropertyRef Name="hotel_order_id" />
+          </Key>
+          <Property Name="hotel_order_id" Type="int" Nullable="false" />
+          <Property Name="status" Type="bit" Nullable="false" />
+          <Property Name="price" Type="int" Nullable="false" />
+          <Property Name="time" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="user_id" Type="int" Nullable="false" />
+          <Property Name="hotel_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Internal">
+          <Key>
+            <PropertyRef Name="internal_id" />
+          </Key>
+          <Property Name="internal_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="terminal" Type="int" Nullable="false" />
+          <Property Name="is_available" Type="bit" Nullable="false" />
+          <Property Name="special_offer" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="flight_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Room">
+          <Key>
+            <PropertyRef Name="room_id" />
+          </Key>
+          <Property Name="room_id" Type="int" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="hotel_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Ticket">
+          <Key>
+            <PropertyRef Name="ticket_id" />
+          </Key>
+          <Property Name="ticket_id" Type="int" Nullable="false" />
+          <Property Name="user_id" Type="int" Nullable="false" />
+          <Property Name="buy_time" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="seat_number" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Transaction">
+          <Key>
+            <PropertyRef Name="transaction_id" />
+          </Key>
+          <Property Name="transaction_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="cost" Type="int" Nullable="false" />
+          <Property Name="type" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="time" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="user_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Trip">
+          <Key>
+            <PropertyRef Name="trip_id" />
+          </Key>
+          <Property Name="trip_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="destination_time" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="capacity" Type="int" Nullable="false" />
+          <Property Name="cost" Type="int" Nullable="false" />
+          <Property Name="company_id" Type="int" Nullable="false" />
+          <Property Name="departure_time" Type="datetime2" Precision="7" />
+          <Property Name="destination_id" Type="int" />
+          <Property Name="departure_id" Type="int" />
+        </EntityType>
+        <EntityType Name="TripTicket">
+          <Key>
+            <PropertyRef Name="trip_ticket_id" />
+          </Key>
+          <Property Name="trip_ticket_id" Type="int" Nullable="false" />
+          <Property Name="ticket_id" Type="int" Nullable="false" />
+          <Property Name="trip_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="user_id" />
+          </Key>
+          <Property Name="user_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="gender" Type="bit" Nullable="false" />
+          <Property Name="first_name" Type="nvarchar" MaxLength="50" />
+          <Property Name="last_name" Type="nvarchar" MaxLength="50" />
+          <Property Name="telephone" Type="nvarchar" MaxLength="50" />
+          <Property Name="national_id" Type="nvarchar" MaxLength="50" />
+          <Property Name="birth_data" Type="date" />
+          <Property Name="email" Type="nvarchar" MaxLength="50" />
+          <Property Name="mobile_phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="account_number" Type="nvarchar" MaxLength="50" />
+          <Property Name="card_number" Type="nvarchar" MaxLength="50" />
+          <Property Name="shaba_number" Type="nvarchar" MaxLength="50" />
+          <Property Name="balance" Type="float" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'alibaba.dbo.UsersWithNonZeroBalance' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="UsersWithNonZeroBalance">
+          <Key>
+            <PropertyRef Name="user_id" />
+            <PropertyRef Name="gender" />
+            <PropertyRef Name="mobile_phone" />
+            <PropertyRef Name="balance" />
+          </Key>
+          <Property Name="user_id" Type="int" Nullable="false" />
+          <Property Name="gender" Type="bit" Nullable="false" />
+          <Property Name="first_name" Type="nvarchar" MaxLength="50" />
+          <Property Name="last_name" Type="nvarchar" MaxLength="50" />
+          <Property Name="telephone" Type="nvarchar" MaxLength="50" />
+          <Property Name="national_id" Type="nvarchar" MaxLength="50" />
+          <Property Name="birthdate" Type="datetime2" Precision="7" />
+          <Property Name="email" Type="nvarchar" MaxLength="50" />
+          <Property Name="mobile_phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="account_number" Type="nvarchar" MaxLength="50" />
+          <Property Name="card_number" Type="nvarchar" MaxLength="50" />
+          <Property Name="shaba_number" Type="nvarchar" MaxLength="50" />
+          <Property Name="balance" Type="float" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__City__country_id__46E78A0C">
+          <End Role="Country" Type="Self.Country" Multiplicity="1" />
+          <End Role="City" Type="Self.City" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Country">
+              <PropertyRef Name="country_id" />
+            </Principal>
+            <Dependent Role="City">
+              <PropertyRef Name="country_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Facility__hotel___47DBAE45">
+          <End Role="Hotel" Type="Self.Hotel" Multiplicity="1" />
+          <End Role="Facility" Type="Self.Facility" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Hotel">
+              <PropertyRef Name="hotel_id" />
+            </Principal>
+            <Dependent Role="Facility">
+              <PropertyRef Name="hotel_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Room__hotel_id__4D94879B">
+          <End Role="Hotel" Type="Self.Hotel" Multiplicity="1" />
+          <End Role="Room" Type="Self.Room" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Hotel">
+              <PropertyRef Name="hotel_id" />
+            </Principal>
+            <Dependent Role="Room">
+              <PropertyRef Name="hotel_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Ticket__user_id__4E88ABD4">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="user_id" />
+            </Principal>
+            <Dependent Role="Ticket">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Trip__departure___5165187F">
+          <End Role="City" Type="Self.City" Multiplicity="0..1" />
+          <End Role="Trip" Type="Self.Trip" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="City">
+              <PropertyRef Name="city_id" />
+            </Principal>
+            <Dependent Role="Trip">
+              <PropertyRef Name="departure_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Trip__destinatio__5070F446">
+          <End Role="City" Type="Self.City" Multiplicity="0..1" />
+          <End Role="Trip" Type="Self.Trip" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="City">
+              <PropertyRef Name="city_id" />
+            </Principal>
+            <Dependent Role="Trip">
+              <PropertyRef Name="destination_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__TripTicke__ticke__534D60F1">
+          <End Role="Ticket" Type="Self.Ticket" Multiplicity="1" />
+          <End Role="TripTicket" Type="Self.TripTicket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ticket">
+              <PropertyRef Name="ticket_id" />
+            </Principal>
+            <Dependent Role="TripTicket">
+              <PropertyRef Name="ticket_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__TripTicke__trip___5441852A">
+          <End Role="Trip" Type="Self.Trip" Multiplicity="1" />
+          <End Role="TripTicket" Type="Self.TripTicket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Trip">
+              <PropertyRef Name="trip_id" />
+            </Principal>
+            <Dependent Role="TripTicket">
+              <PropertyRef Name="trip_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Bus_Trip">
+          <End Role="Trip" Type="Self.Trip" Multiplicity="1" />
+          <End Role="Bus" Type="Self.Bus" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Trip">
+              <PropertyRef Name="trip_id" />
+            </Principal>
+            <Dependent Role="Bus">
+              <PropertyRef Name="trip_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Flight_Trip">
+          <End Role="Trip" Type="Self.Trip" Multiplicity="1" />
+          <End Role="Flight" Type="Self.Flight" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Trip">
+              <PropertyRef Name="trip_id" />
+            </Principal>
+            <Dependent Role="Flight">
+              <PropertyRef Name="trip_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Foreign_Flight">
+          <End Role="Flight" Type="Self.Flight" Multiplicity="1" />
+          <End Role="Foreign" Type="Self.Foreign" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Flight">
+              <PropertyRef Name="flight_id" />
+            </Principal>
+            <Dependent Role="Foreign">
+              <PropertyRef Name="flight_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HotelOrder_Hotel">
+          <End Role="Hotel" Type="Self.Hotel" Multiplicity="1" />
+          <End Role="HotelOrder" Type="Self.HotelOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Hotel">
+              <PropertyRef Name="hotel_id" />
+            </Principal>
+            <Dependent Role="HotelOrder">
+              <PropertyRef Name="hotel_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HotelOrder_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="HotelOrder" Type="Self.HotelOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="user_id" />
+            </Principal>
+            <Dependent Role="HotelOrder">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Internal_Flight">
+          <End Role="Flight" Type="Self.Flight" Multiplicity="1" />
+          <End Role="Internal" Type="Self.Internal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Flight">
+              <PropertyRef Name="flight_id" />
+            </Principal>
+            <Dependent Role="Internal">
+              <PropertyRef Name="flight_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Transaction_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="Transaction" Type="Self.Transaction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="user_id" />
+            </Principal>
+            <Dependent Role="Transaction">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Trip_Company">
+          <End Role="Company" Type="Self.Company" Multiplicity="1" />
+          <End Role="Trip" Type="Self.Trip" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Company">
+              <PropertyRef Name="company_id" />
+            </Principal>
+            <Dependent Role="Trip">
+              <PropertyRef Name="company_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="alibabaModelStoreContainer">
+          <EntitySet Name="Bus" EntityType="Self.Bus" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="City" EntityType="Self.City" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Company" EntityType="Self.Company" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Country" EntityType="Self.Country" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Facility" EntityType="Self.Facility" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Flight" EntityType="Self.Flight" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Foreign" EntityType="Self.Foreign" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Hotel" EntityType="Self.Hotel" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HotelOrder" EntityType="Self.HotelOrder" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Internal" EntityType="Self.Internal" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Room" EntityType="Self.Room" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ticket" EntityType="Self.Ticket" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Transaction" EntityType="Self.Transaction" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Trip" EntityType="Self.Trip" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TripTicket" EntityType="Self.TripTicket" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UsersWithNonZeroBalance" EntityType="Self.UsersWithNonZeroBalance" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [UsersWithNonZeroBalance].[user_id] AS [user_id], 
+    [UsersWithNonZeroBalance].[gender] AS [gender], 
+    [UsersWithNonZeroBalance].[first_name] AS [first_name], 
+    [UsersWithNonZeroBalance].[last_name] AS [last_name], 
+    [UsersWithNonZeroBalance].[telephone] AS [telephone], 
+    [UsersWithNonZeroBalance].[national_id] AS [national_id], 
+    [UsersWithNonZeroBalance].[birthdate] AS [birthdate], 
+    [UsersWithNonZeroBalance].[email] AS [email], 
+    [UsersWithNonZeroBalance].[mobile_phone] AS [mobile_phone], 
+    [UsersWithNonZeroBalance].[account_number] AS [account_number], 
+    [UsersWithNonZeroBalance].[card_number] AS [card_number], 
+    [UsersWithNonZeroBalance].[shaba_number] AS [shaba_number], 
+    [UsersWithNonZeroBalance].[balance] AS [balance]
+    FROM [dbo].[UsersWithNonZeroBalance] AS [UsersWithNonZeroBalance]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK__City__country_id__46E78A0C" Association="Self.FK__City__country_id__46E78A0C">
+            <End Role="Country" EntitySet="Country" />
+            <End Role="City" EntitySet="City" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Facility__hotel___47DBAE45" Association="Self.FK__Facility__hotel___47DBAE45">
+            <End Role="Hotel" EntitySet="Hotel" />
+            <End Role="Facility" EntitySet="Facility" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Room__hotel_id__4D94879B" Association="Self.FK__Room__hotel_id__4D94879B">
+            <End Role="Hotel" EntitySet="Hotel" />
+            <End Role="Room" EntitySet="Room" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Ticket__user_id__4E88ABD4" Association="Self.FK__Ticket__user_id__4E88ABD4">
+            <End Role="User" EntitySet="User" />
+            <End Role="Ticket" EntitySet="Ticket" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Trip__departure___5165187F" Association="Self.FK__Trip__departure___5165187F">
+            <End Role="City" EntitySet="City" />
+            <End Role="Trip" EntitySet="Trip" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Trip__destinatio__5070F446" Association="Self.FK__Trip__destinatio__5070F446">
+            <End Role="City" EntitySet="City" />
+            <End Role="Trip" EntitySet="Trip" />
+          </AssociationSet>
+          <AssociationSet Name="FK__TripTicke__ticke__534D60F1" Association="Self.FK__TripTicke__ticke__534D60F1">
+            <End Role="Ticket" EntitySet="Ticket" />
+            <End Role="TripTicket" EntitySet="TripTicket" />
+          </AssociationSet>
+          <AssociationSet Name="FK__TripTicke__trip___5441852A" Association="Self.FK__TripTicke__trip___5441852A">
+            <End Role="Trip" EntitySet="Trip" />
+            <End Role="TripTicket" EntitySet="TripTicket" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Bus_Trip" Association="Self.FK_Bus_Trip">
+            <End Role="Trip" EntitySet="Trip" />
+            <End Role="Bus" EntitySet="Bus" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Flight_Trip" Association="Self.FK_Flight_Trip">
+            <End Role="Trip" EntitySet="Trip" />
+            <End Role="Flight" EntitySet="Flight" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Foreign_Flight" Association="Self.FK_Foreign_Flight">
+            <End Role="Flight" EntitySet="Flight" />
+            <End Role="Foreign" EntitySet="Foreign" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HotelOrder_Hotel" Association="Self.FK_HotelOrder_Hotel">
+            <End Role="Hotel" EntitySet="Hotel" />
+            <End Role="HotelOrder" EntitySet="HotelOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HotelOrder_User" Association="Self.FK_HotelOrder_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="HotelOrder" EntitySet="HotelOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Internal_Flight" Association="Self.FK_Internal_Flight">
+            <End Role="Flight" EntitySet="Flight" />
+            <End Role="Internal" EntitySet="Internal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Transaction_User" Association="Self.FK_Transaction_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="Transaction" EntitySet="Transaction" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Trip_Company" Association="Self.FK_Trip_Company">
+            <End Role="Company" EntitySet="Company" />
+            <End Role="Trip" EntitySet="Trip" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="alibabaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Bus">
+          <Key>
+            <PropertyRef Name="bus_id" />
+          </Key>
+          <Property Name="bus_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="bus_type" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="departure_terminal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="destination_terminal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="trip_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Trip" Relationship="Self.FK_Bus_Trip" FromRole="Bus" ToRole="Trip" />
+        </EntityType>
+        <EntityType Name="City">
+          <Key>
+            <PropertyRef Name="city_id" />
+          </Key>
+          <Property Name="city_id" Type="Int32" Nullable="false" />
+          <Property Name="country_id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Country" Relationship="Self.FK__City__country_id__46E78A0C" FromRole="City" ToRole="Country" />
+          <NavigationProperty Name="Trip" Relationship="Self.FK__Trip__departure___5165187F" FromRole="City" ToRole="Trip" />
+          <NavigationProperty Name="Trip1" Relationship="Self.FK__Trip__destinatio__5070F446" FromRole="City" ToRole="Trip" />
+        </EntityType>
+        <EntityType Name="Company">
+          <Key>
+            <PropertyRef Name="company_id" />
+          </Key>
+          <Property Name="company_id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Trip" Relationship="Self.FK_Trip_Company" FromRole="Company" ToRole="Trip" />
+        </EntityType>
+        <EntityType Name="Country">
+          <Key>
+            <PropertyRef Name="country_id" />
+          </Key>
+          <Property Name="country_id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="City" Relationship="Self.FK__City__country_id__46E78A0C" FromRole="Country" ToRole="City" />
+        </EntityType>
+        <EntityType Name="Facility">
+          <Key>
+            <PropertyRef Name="facility_id" />
+          </Key>
+          <Property Name="facility_id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="hotel_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Hotel" Relationship="Self.FK__Facility__hotel___47DBAE45" FromRole="Facility" ToRole="Hotel" />
+        </EntityType>
+        <EntityType Name="Flight">
+          <Key>
+            <PropertyRef Name="flight_id" />
+          </Key>
+          <Property Name="flight_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ticket_type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="flight_class" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="departure_airport" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="destination_airport" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="load_amount" Type="Int32" Nullable="false" />
+          <Property Name="trip_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Trip" Relationship="Self.FK_Flight_Trip" FromRole="Flight" ToRole="Trip" />
+          <NavigationProperty Name="Foreign" Relationship="Self.FK_Foreign_Flight" FromRole="Flight" ToRole="Foreign" />
+          <NavigationProperty Name="Internal" Relationship="Self.FK_Internal_Flight" FromRole="Flight" ToRole="Internal" />
+        </EntityType>
+        <EntityType Name="Foreign">
+          <Key>
+            <PropertyRef Name="foreign_id" />
+          </Key>
+          <Property Name="foreign_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="travel_time" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="stop_number" Type="Int32" Nullable="false" />
+          <Property Name="stop_path" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="flight_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Flight" Relationship="Self.FK_Foreign_Flight" FromRole="Foreign" ToRole="Flight" />
+        </EntityType>
+        <EntityType Name="Hotel">
+          <Key>
+            <PropertyRef Name="hotel_id" />
+          </Key>
+          <Property Name="hotel_id" Type="Int32" Nullable="false" />
+          <Property Name="ratiing" Type="Int32" />
+          <Property Name="popularity" Type="Int32" Nullable="false" />
+          <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="room_capacity" Type="Int32" Nullable="false" />
+          <Property Name="empty_room" Type="Int32" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Facility" Relationship="Self.FK__Facility__hotel___47DBAE45" FromRole="Hotel" ToRole="Facility" />
+          <NavigationProperty Name="Room" Relationship="Self.FK__Room__hotel_id__4D94879B" FromRole="Hotel" ToRole="Room" />
+          <NavigationProperty Name="HotelOrder" Relationship="Self.FK_HotelOrder_Hotel" FromRole="Hotel" ToRole="HotelOrder" />
+        </EntityType>
+        <EntityType Name="HotelOrder">
+          <Key>
+            <PropertyRef Name="hotel_order_id" />
+          </Key>
+          <Property Name="hotel_order_id" Type="Int32" Nullable="false" />
+          <Property Name="status" Type="Boolean" Nullable="false" />
+          <Property Name="price" Type="Int32" Nullable="false" />
+          <Property Name="time" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="user_id" Type="Int32" Nullable="false" />
+          <Property Name="hotel_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Hotel" Relationship="Self.FK_HotelOrder_Hotel" FromRole="HotelOrder" ToRole="Hotel" />
+          <NavigationProperty Name="User" Relationship="Self.FK_HotelOrder_User" FromRole="HotelOrder" ToRole="User" />
+        </EntityType>
+        <EntityType Name="Internal">
+          <Key>
+            <PropertyRef Name="internal_id" />
+          </Key>
+          <Property Name="internal_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="terminal" Type="Int32" Nullable="false" />
+          <Property Name="is_available" Type="Boolean" Nullable="false" />
+          <Property Name="special_offer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="flight_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Flight" Relationship="Self.FK_Internal_Flight" FromRole="Internal" ToRole="Flight" />
+        </EntityType>
+        <EntityType Name="Room">
+          <Key>
+            <PropertyRef Name="room_id" />
+          </Key>
+          <Property Name="room_id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="price" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="hotel_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Hotel" Relationship="Self.FK__Room__hotel_id__4D94879B" FromRole="Room" ToRole="Hotel" />
+        </EntityType>
+        <EntityType Name="Ticket">
+          <Key>
+            <PropertyRef Name="ticket_id" />
+          </Key>
+          <Property Name="ticket_id" Type="Int32" Nullable="false" />
+          <Property Name="user_id" Type="Int32" Nullable="false" />
+          <Property Name="buy_time" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="price" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="seat_number" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="Self.FK__Ticket__user_id__4E88ABD4" FromRole="Ticket" ToRole="User" />
+          <NavigationProperty Name="TripTicket" Relationship="Self.FK__TripTicke__ticke__534D60F1" FromRole="Ticket" ToRole="TripTicket" />
+        </EntityType>
+        <EntityType Name="Transaction">
+          <Key>
+            <PropertyRef Name="transaction_id" />
+          </Key>
+          <Property Name="transaction_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="cost" Type="Int32" Nullable="false" />
+          <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="time" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="user_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="Self.FK_Transaction_User" FromRole="Transaction" ToRole="User" />
+        </EntityType>
+        <EntityType Name="Trip">
+          <Key>
+            <PropertyRef Name="trip_id" />
+          </Key>
+          <Property Name="trip_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="destination_time" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="capacity" Type="Int32" Nullable="false" />
+          <Property Name="cost" Type="Int32" Nullable="false" />
+          <Property Name="company_id" Type="Int32" Nullable="false" />
+          <Property Name="departure_time" Type="DateTime" Precision="7" />
+          <Property Name="destination_id" Type="Int32" />
+          <Property Name="departure_id" Type="Int32" />
+          <NavigationProperty Name="Bus" Relationship="Self.FK_Bus_Trip" FromRole="Trip" ToRole="Bus" />
+          <NavigationProperty Name="City" Relationship="Self.FK__Trip__departure___5165187F" FromRole="Trip" ToRole="City" />
+          <NavigationProperty Name="City1" Relationship="Self.FK__Trip__destinatio__5070F446" FromRole="Trip" ToRole="City" />
+          <NavigationProperty Name="Company" Relationship="Self.FK_Trip_Company" FromRole="Trip" ToRole="Company" />
+          <NavigationProperty Name="Flight" Relationship="Self.FK_Flight_Trip" FromRole="Trip" ToRole="Flight" />
+          <NavigationProperty Name="TripTicket" Relationship="Self.FK__TripTicke__trip___5441852A" FromRole="Trip" ToRole="TripTicket" />
+        </EntityType>
+        <EntityType Name="TripTicket">
+          <Key>
+            <PropertyRef Name="trip_ticket_id" />
+          </Key>
+          <Property Name="trip_ticket_id" Type="Int32" Nullable="false" />
+          <Property Name="ticket_id" Type="Int32" Nullable="false" />
+          <Property Name="trip_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Ticket" Relationship="Self.FK__TripTicke__ticke__534D60F1" FromRole="TripTicket" ToRole="Ticket" />
+          <NavigationProperty Name="Trip" Relationship="Self.FK__TripTicke__trip___5441852A" FromRole="TripTicket" ToRole="Trip" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="user_id" />
+          </Key>
+          <Property Name="user_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="gender" Type="Boolean" Nullable="false" />
+          <Property Name="first_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="last_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="telephone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="national_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="birth_data" Type="DateTime" Precision="0" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="mobile_phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="account_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="card_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="shaba_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="balance" Type="Double" Nullable="false" />
+          <NavigationProperty Name="HotelOrder" Relationship="Self.FK_HotelOrder_User" FromRole="User" ToRole="HotelOrder" />
+          <NavigationProperty Name="Ticket" Relationship="Self.FK__Ticket__user_id__4E88ABD4" FromRole="User" ToRole="Ticket" />
+          <NavigationProperty Name="Transaction" Relationship="Self.FK_Transaction_User" FromRole="User" ToRole="Transaction" />
+        </EntityType>
+        <EntityType Name="UsersWithNonZeroBalance">
+          <Key>
+            <PropertyRef Name="user_id" />
+            <PropertyRef Name="gender" />
+            <PropertyRef Name="mobile_phone" />
+            <PropertyRef Name="balance" />
+          </Key>
+          <Property Name="user_id" Type="Int32" Nullable="false" />
+          <Property Name="gender" Type="Boolean" Nullable="false" />
+          <Property Name="first_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="last_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="telephone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="national_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="birthdate" Type="DateTime" Precision="7" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="mobile_phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="account_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="card_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="shaba_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="balance" Type="Double" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Bus_Trip">
+          <End Role="Trip" Type="Self.Trip" Multiplicity="1" />
+          <End Role="Bus" Type="Self.Bus" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Trip">
+              <PropertyRef Name="trip_id" />
+            </Principal>
+            <Dependent Role="Bus">
+              <PropertyRef Name="trip_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__City__country_id__46E78A0C">
+          <End Role="Country" Type="Self.Country" Multiplicity="1" />
+          <End Role="City" Type="Self.City" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Country">
+              <PropertyRef Name="country_id" />
+            </Principal>
+            <Dependent Role="City">
+              <PropertyRef Name="country_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Trip__departure___5165187F">
+          <End Role="City" Type="Self.City" Multiplicity="0..1" />
+          <End Role="Trip" Type="Self.Trip" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="City">
+              <PropertyRef Name="city_id" />
+            </Principal>
+            <Dependent Role="Trip">
+              <PropertyRef Name="departure_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Trip__destinatio__5070F446">
+          <End Role="City" Type="Self.City" Multiplicity="0..1" />
+          <End Role="Trip" Type="Self.Trip" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="City">
+              <PropertyRef Name="city_id" />
+            </Principal>
+            <Dependent Role="Trip">
+              <PropertyRef Name="destination_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Trip_Company">
+          <End Role="Company" Type="Self.Company" Multiplicity="1" />
+          <End Role="Trip" Type="Self.Trip" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Company">
+              <PropertyRef Name="company_id" />
+            </Principal>
+            <Dependent Role="Trip">
+              <PropertyRef Name="company_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Facility__hotel___47DBAE45">
+          <End Role="Hotel" Type="Self.Hotel" Multiplicity="1" />
+          <End Role="Facility" Type="Self.Facility" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Hotel">
+              <PropertyRef Name="hotel_id" />
+            </Principal>
+            <Dependent Role="Facility">
+              <PropertyRef Name="hotel_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Flight_Trip">
+          <End Role="Trip" Type="Self.Trip" Multiplicity="1" />
+          <End Role="Flight" Type="Self.Flight" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Trip">
+              <PropertyRef Name="trip_id" />
+            </Principal>
+            <Dependent Role="Flight">
+              <PropertyRef Name="trip_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Foreign_Flight">
+          <End Role="Flight" Type="Self.Flight" Multiplicity="1" />
+          <End Role="Foreign" Type="Self.Foreign" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Flight">
+              <PropertyRef Name="flight_id" />
+            </Principal>
+            <Dependent Role="Foreign">
+              <PropertyRef Name="flight_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Internal_Flight">
+          <End Role="Flight" Type="Self.Flight" Multiplicity="1" />
+          <End Role="Internal" Type="Self.Internal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Flight">
+              <PropertyRef Name="flight_id" />
+            </Principal>
+            <Dependent Role="Internal">
+              <PropertyRef Name="flight_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Room__hotel_id__4D94879B">
+          <End Role="Hotel" Type="Self.Hotel" Multiplicity="1" />
+          <End Role="Room" Type="Self.Room" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Hotel">
+              <PropertyRef Name="hotel_id" />
+            </Principal>
+            <Dependent Role="Room">
+              <PropertyRef Name="hotel_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HotelOrder_Hotel">
+          <End Role="Hotel" Type="Self.Hotel" Multiplicity="1" />
+          <End Role="HotelOrder" Type="Self.HotelOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Hotel">
+              <PropertyRef Name="hotel_id" />
+            </Principal>
+            <Dependent Role="HotelOrder">
+              <PropertyRef Name="hotel_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HotelOrder_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="HotelOrder" Type="Self.HotelOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="user_id" />
+            </Principal>
+            <Dependent Role="HotelOrder">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Ticket__user_id__4E88ABD4">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="user_id" />
+            </Principal>
+            <Dependent Role="Ticket">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__TripTicke__ticke__534D60F1">
+          <End Role="Ticket" Type="Self.Ticket" Multiplicity="1" />
+          <End Role="TripTicket" Type="Self.TripTicket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ticket">
+              <PropertyRef Name="ticket_id" />
+            </Principal>
+            <Dependent Role="TripTicket">
+              <PropertyRef Name="ticket_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Transaction_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="Transaction" Type="Self.Transaction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="user_id" />
+            </Principal>
+            <Dependent Role="Transaction">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__TripTicke__trip___5441852A">
+          <End Role="Trip" Type="Self.Trip" Multiplicity="1" />
+          <End Role="TripTicket" Type="Self.TripTicket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Trip">
+              <PropertyRef Name="trip_id" />
+            </Principal>
+            <Dependent Role="TripTicket">
+              <PropertyRef Name="trip_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="alibabaEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Bus" EntityType="Self.Bus" />
+          <EntitySet Name="City" EntityType="Self.City" />
+          <EntitySet Name="Company" EntityType="Self.Company" />
+          <EntitySet Name="Country" EntityType="Self.Country" />
+          <EntitySet Name="Facility" EntityType="Self.Facility" />
+          <EntitySet Name="Flight" EntityType="Self.Flight" />
+          <EntitySet Name="Foreign" EntityType="Self.Foreign" />
+          <EntitySet Name="Hotel" EntityType="Self.Hotel" />
+          <EntitySet Name="HotelOrder" EntityType="Self.HotelOrder" />
+          <EntitySet Name="Internal" EntityType="Self.Internal" />
+          <EntitySet Name="Room" EntityType="Self.Room" />
+          <EntitySet Name="Ticket" EntityType="Self.Ticket" />
+          <EntitySet Name="Transaction" EntityType="Self.Transaction" />
+          <EntitySet Name="Trip" EntityType="Self.Trip" />
+          <EntitySet Name="TripTicket" EntityType="Self.TripTicket" />
+          <EntitySet Name="User" EntityType="Self.User" />
+          <EntitySet Name="UsersWithNonZeroBalance" EntityType="Self.UsersWithNonZeroBalance" />
+          <AssociationSet Name="FK_Bus_Trip" Association="Self.FK_Bus_Trip">
+            <End Role="Trip" EntitySet="Trip" />
+            <End Role="Bus" EntitySet="Bus" />
+          </AssociationSet>
+          <AssociationSet Name="FK__City__country_id__46E78A0C" Association="Self.FK__City__country_id__46E78A0C">
+            <End Role="Country" EntitySet="Country" />
+            <End Role="City" EntitySet="City" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Trip__departure___5165187F" Association="Self.FK__Trip__departure___5165187F">
+            <End Role="City" EntitySet="City" />
+            <End Role="Trip" EntitySet="Trip" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Trip__destinatio__5070F446" Association="Self.FK__Trip__destinatio__5070F446">
+            <End Role="City" EntitySet="City" />
+            <End Role="Trip" EntitySet="Trip" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Trip_Company" Association="Self.FK_Trip_Company">
+            <End Role="Company" EntitySet="Company" />
+            <End Role="Trip" EntitySet="Trip" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Facility__hotel___47DBAE45" Association="Self.FK__Facility__hotel___47DBAE45">
+            <End Role="Hotel" EntitySet="Hotel" />
+            <End Role="Facility" EntitySet="Facility" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Flight_Trip" Association="Self.FK_Flight_Trip">
+            <End Role="Trip" EntitySet="Trip" />
+            <End Role="Flight" EntitySet="Flight" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Foreign_Flight" Association="Self.FK_Foreign_Flight">
+            <End Role="Flight" EntitySet="Flight" />
+            <End Role="Foreign" EntitySet="Foreign" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Internal_Flight" Association="Self.FK_Internal_Flight">
+            <End Role="Flight" EntitySet="Flight" />
+            <End Role="Internal" EntitySet="Internal" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Room__hotel_id__4D94879B" Association="Self.FK__Room__hotel_id__4D94879B">
+            <End Role="Hotel" EntitySet="Hotel" />
+            <End Role="Room" EntitySet="Room" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HotelOrder_Hotel" Association="Self.FK_HotelOrder_Hotel">
+            <End Role="Hotel" EntitySet="Hotel" />
+            <End Role="HotelOrder" EntitySet="HotelOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HotelOrder_User" Association="Self.FK_HotelOrder_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="HotelOrder" EntitySet="HotelOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Ticket__user_id__4E88ABD4" Association="Self.FK__Ticket__user_id__4E88ABD4">
+            <End Role="User" EntitySet="User" />
+            <End Role="Ticket" EntitySet="Ticket" />
+          </AssociationSet>
+          <AssociationSet Name="FK__TripTicke__ticke__534D60F1" Association="Self.FK__TripTicke__ticke__534D60F1">
+            <End Role="Ticket" EntitySet="Ticket" />
+            <End Role="TripTicket" EntitySet="TripTicket" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Transaction_User" Association="Self.FK_Transaction_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="Transaction" EntitySet="Transaction" />
+          </AssociationSet>
+          <AssociationSet Name="FK__TripTicke__trip___5441852A" Association="Self.FK__TripTicke__trip___5441852A">
+            <End Role="Trip" EntitySet="Trip" />
+            <End Role="TripTicket" EntitySet="TripTicket" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="alibabaModelStoreContainer" CdmEntityContainer="alibabaEntities">
+          <EntitySetMapping Name="Bus">
+            <EntityTypeMapping TypeName="alibabaModel.Bus">
+              <MappingFragment StoreEntitySet="Bus">
+                <ScalarProperty Name="bus_id" ColumnName="bus_id" />
+                <ScalarProperty Name="bus_type" ColumnName="bus_type" />
+                <ScalarProperty Name="departure_terminal" ColumnName="departure_terminal" />
+                <ScalarProperty Name="destination_terminal" ColumnName="destination_terminal" />
+                <ScalarProperty Name="trip_id" ColumnName="trip_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="City">
+            <EntityTypeMapping TypeName="alibabaModel.City">
+              <MappingFragment StoreEntitySet="City">
+                <ScalarProperty Name="city_id" ColumnName="city_id" />
+                <ScalarProperty Name="country_id" ColumnName="country_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Company">
+            <EntityTypeMapping TypeName="alibabaModel.Company">
+              <MappingFragment StoreEntitySet="Company">
+                <ScalarProperty Name="company_id" ColumnName="company_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="address" ColumnName="address" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Country">
+            <EntityTypeMapping TypeName="alibabaModel.Country">
+              <MappingFragment StoreEntitySet="Country">
+                <ScalarProperty Name="country_id" ColumnName="country_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Facility">
+            <EntityTypeMapping TypeName="alibabaModel.Facility">
+              <MappingFragment StoreEntitySet="Facility">
+                <ScalarProperty Name="facility_id" ColumnName="facility_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="hotel_id" ColumnName="hotel_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Flight">
+            <EntityTypeMapping TypeName="alibabaModel.Flight">
+              <MappingFragment StoreEntitySet="Flight">
+                <ScalarProperty Name="flight_id" ColumnName="flight_id" />
+                <ScalarProperty Name="ticket_type" ColumnName="ticket_type" />
+                <ScalarProperty Name="flight_class" ColumnName="flight_class" />
+                <ScalarProperty Name="departure_airport" ColumnName="departure_airport" />
+                <ScalarProperty Name="destination_airport" ColumnName="destination_airport" />
+                <ScalarProperty Name="load_amount" ColumnName="load_amount" />
+                <ScalarProperty Name="trip_id" ColumnName="trip_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Foreign">
+            <EntityTypeMapping TypeName="alibabaModel.Foreign">
+              <MappingFragment StoreEntitySet="Foreign">
+                <ScalarProperty Name="foreign_id" ColumnName="foreign_id" />
+                <ScalarProperty Name="travel_time" ColumnName="travel_time" />
+                <ScalarProperty Name="stop_number" ColumnName="stop_number" />
+                <ScalarProperty Name="stop_path" ColumnName="stop_path" />
+                <ScalarProperty Name="flight_id" ColumnName="flight_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Hotel">
+            <EntityTypeMapping TypeName="alibabaModel.Hotel">
+              <MappingFragment StoreEntitySet="Hotel">
+                <ScalarProperty Name="hotel_id" ColumnName="hotel_id" />
+                <ScalarProperty Name="ratiing" ColumnName="ratiing" />
+                <ScalarProperty Name="popularity" ColumnName="popularity" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="city" ColumnName="city" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="room_capacity" ColumnName="room_capacity" />
+                <ScalarProperty Name="empty_room" ColumnName="empty_room" />
+                <ScalarProperty Name="description" ColumnName="description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HotelOrder">
+            <EntityTypeMapping TypeName="alibabaModel.HotelOrder">
+              <MappingFragment StoreEntitySet="HotelOrder">
+                <ScalarProperty Name="hotel_order_id" ColumnName="hotel_order_id" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="time" ColumnName="time" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="hotel_id" ColumnName="hotel_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Internal">
+            <EntityTypeMapping TypeName="alibabaModel.Internal">
+              <MappingFragment StoreEntitySet="Internal">
+                <ScalarProperty Name="internal_id" ColumnName="internal_id" />
+                <ScalarProperty Name="terminal" ColumnName="terminal" />
+                <ScalarProperty Name="is_available" ColumnName="is_available" />
+                <ScalarProperty Name="special_offer" ColumnName="special_offer" />
+                <ScalarProperty Name="flight_id" ColumnName="flight_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Room">
+            <EntityTypeMapping TypeName="alibabaModel.Room">
+              <MappingFragment StoreEntitySet="Room">
+                <ScalarProperty Name="room_id" ColumnName="room_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="hotel_id" ColumnName="hotel_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ticket">
+            <EntityTypeMapping TypeName="alibabaModel.Ticket">
+              <MappingFragment StoreEntitySet="Ticket">
+                <ScalarProperty Name="ticket_id" ColumnName="ticket_id" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="buy_time" ColumnName="buy_time" />
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="seat_number" ColumnName="seat_number" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Transaction">
+            <EntityTypeMapping TypeName="alibabaModel.Transaction">
+              <MappingFragment StoreEntitySet="Transaction">
+                <ScalarProperty Name="transaction_id" ColumnName="transaction_id" />
+                <ScalarProperty Name="cost" ColumnName="cost" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="time" ColumnName="time" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Trip">
+            <EntityTypeMapping TypeName="alibabaModel.Trip">
+              <MappingFragment StoreEntitySet="Trip">
+                <ScalarProperty Name="trip_id" ColumnName="trip_id" />
+                <ScalarProperty Name="destination_time" ColumnName="destination_time" />
+                <ScalarProperty Name="capacity" ColumnName="capacity" />
+                <ScalarProperty Name="cost" ColumnName="cost" />
+                <ScalarProperty Name="company_id" ColumnName="company_id" />
+                <ScalarProperty Name="departure_time" ColumnName="departure_time" />
+                <ScalarProperty Name="destination_id" ColumnName="destination_id" />
+                <ScalarProperty Name="departure_id" ColumnName="departure_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TripTicket">
+            <EntityTypeMapping TypeName="alibabaModel.TripTicket">
+              <MappingFragment StoreEntitySet="TripTicket">
+                <ScalarProperty Name="trip_ticket_id" ColumnName="trip_ticket_id" />
+                <ScalarProperty Name="ticket_id" ColumnName="ticket_id" />
+                <ScalarProperty Name="trip_id" ColumnName="trip_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User">
+            <EntityTypeMapping TypeName="alibabaModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+                <ScalarProperty Name="first_name" ColumnName="first_name" />
+                <ScalarProperty Name="last_name" ColumnName="last_name" />
+                <ScalarProperty Name="telephone" ColumnName="telephone" />
+                <ScalarProperty Name="national_id" ColumnName="national_id" />
+                <ScalarProperty Name="birth_data" ColumnName="birth_data" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="mobile_phone" ColumnName="mobile_phone" />
+                <ScalarProperty Name="account_number" ColumnName="account_number" />
+                <ScalarProperty Name="card_number" ColumnName="card_number" />
+                <ScalarProperty Name="shaba_number" ColumnName="shaba_number" />
+                <ScalarProperty Name="balance" ColumnName="balance" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UsersWithNonZeroBalance">
+            <EntityTypeMapping TypeName="alibabaModel.UsersWithNonZeroBalance">
+              <MappingFragment StoreEntitySet="UsersWithNonZeroBalance">
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+                <ScalarProperty Name="first_name" ColumnName="first_name" />
+                <ScalarProperty Name="last_name" ColumnName="last_name" />
+                <ScalarProperty Name="telephone" ColumnName="telephone" />
+                <ScalarProperty Name="national_id" ColumnName="national_id" />
+                <ScalarProperty Name="birthdate" ColumnName="birthdate" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="mobile_phone" ColumnName="mobile_phone" />
+                <ScalarProperty Name="account_number" ColumnName="account_number" />
+                <ScalarProperty Name="card_number" ColumnName="card_number" />
+                <ScalarProperty Name="shaba_number" ColumnName="shaba_number" />
+                <ScalarProperty Name="balance" ColumnName="balance" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

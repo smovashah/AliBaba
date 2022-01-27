@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\UniVerSity\\STUDY\\پایگاه داده\\project\\phase3\\AliBaba\\viewLayer\\viewLayer.csproj": {}
+  },
+  "projects": {
+    "F:\\UniVerSity\\STUDY\\پایگاه داده\\project\\phase3\\AliBaba\\DataLayer\\DataLayer.csproj": {
+      "restore": {
+        "projectUniqueName": "F:\\UniVerSity\\STUDY\\پایگاه داده\\project\\phase3\\AliBaba\\DataLayer\\DataLayer.csproj",
+        "projectName": "DataLayer",
+        "projectPath": "F:\\UniVerSity\\STUDY\\پایگاه داده\\project\\phase3\\AliBaba\\DataLayer\\DataLayer.csproj",
+        "packagesPath": "C:\\Users\\Saleh\\.nuget\\packages\\",
+        "projectStyle": "PackagesConfig",
+        "configFilePaths": [
+          "C:\\Users\\Saleh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        },
+        "packagesConfigPath": "F:\\UniVerSity\\STUDY\\پایگاه داده\\project\\phase3\\AliBaba\\DataLayer\\packages.config"
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "F:\\UniVerSity\\STUDY\\پایگاه داده\\project\\phase3\\AliBaba\\viewLayer\\viewLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\UniVerSity\\STUDY\\پایگاه داده\\project\\phase3\\AliBaba\\viewLayer\\viewLayer.csproj",
+        "projectName": "viewLayer",
+        "projectPath": "F:\\UniVerSity\\STUDY\\پایگاه داده\\project\\phase3\\AliBaba\\viewLayer\\viewLayer.csproj",
+        "packagesPath": "C:\\Users\\Saleh\\.nuget\\packages\\",
+        "outputPath": "F:\\UniVerSity\\STUDY\\پایگاه داده\\project\\phase3\\AliBaba\\viewLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Saleh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "F:\\UniVerSity\\STUDY\\پایگاه داده\\project\\phase3\\AliBaba\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "F:\\UniVerSity\\STUDY\\پایگاه داده\\project\\phase3\\AliBaba\\DataLayer\\DataLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

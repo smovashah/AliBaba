@@ -1,0 +1,86 @@
+F:\Project\AliBaba\viewLayer\bin\Debug\net5.0\appsettings.Development.json
+F:\Project\AliBaba\viewLayer\bin\Debug\net5.0\appsettings.json
+F:\Project\AliBaba\viewLayer\bin\Debug\net5.0\viewLayer.exe
+F:\Project\AliBaba\viewLayer\bin\Debug\net5.0\viewLayer.deps.json
+F:\Project\AliBaba\viewLayer\bin\Debug\net5.0\viewLayer.runtimeconfig.json
+F:\Project\AliBaba\viewLayer\bin\Debug\net5.0\viewLayer.runtimeconfig.dev.json
+F:\Project\AliBaba\viewLayer\bin\Debug\net5.0\viewLayer.dll
+F:\Project\AliBaba\viewLayer\bin\Debug\net5.0\ref\viewLayer.dll
+F:\Project\AliBaba\viewLayer\bin\Debug\net5.0\viewLayer.pdb
+F:\Project\AliBaba\viewLayer\bin\Debug\net5.0\viewLayer.Views.dll
+F:\Project\AliBaba\viewLayer\bin\Debug\net5.0\viewLayer.Views.pdb
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.csproj.AssemblyReference.cache
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.GeneratedMSBuildEditorConfig.editorconfig
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.AssemblyInfoInputs.cache
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.AssemblyInfo.cs
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.csproj.CoreCompileInputs.cache
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.MvcApplicationPartsAssemblyInfo.cache
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.RazorAssemblyInfo.cache
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.RazorAssemblyInfo.cs
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\scopedcss\bundle\viewLayer.styles.css
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\staticwebassets\viewLayer.StaticWebAssets.Manifest.cache
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.TagHelpers.input.cache
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.TagHelpers.output.cache
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.RazorCoreGenerate.cache
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.RazorTargetAssemblyInfo.cache
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.RazorTargetAssemblyInfo.cs
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.Views.pdb
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.dll
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\ref\viewLayer.dll
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.pdb
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.genruntimeconfig.cache
+F:\Project\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.csproj.CopyComplete
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.dll
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\ref\viewLayer.dll
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.pdb
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\bin\Debug\net5.0\appsettings.Development.json
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\bin\Debug\net5.0\appsettings.json
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\bin\Debug\net5.0\viewLayer.exe
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\bin\Debug\net5.0\viewLayer.deps.json
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\bin\Debug\net5.0\viewLayer.runtimeconfig.json
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\bin\Debug\net5.0\viewLayer.runtimeconfig.dev.json
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\bin\Debug\net5.0\viewLayer.dll
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\bin\Debug\net5.0\ref\viewLayer.dll
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\bin\Debug\net5.0\viewLayer.pdb
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\bin\Debug\net5.0\viewLayer.Views.dll
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\bin\Debug\net5.0\viewLayer.Views.pdb
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\bin\Debug\net5.0\DataLayer.exe
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\bin\Debug\net5.0\EntityFramework.dll
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\bin\Debug\net5.0\EntityFramework.SqlServer.dll
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\bin\Debug\net5.0\DataLayer.pdb
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\bin\Debug\net5.0\DataLayer.exe.config
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\bin\Debug\net5.0\EntityFramework.xml
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\bin\Debug\net5.0\EntityFramework.SqlServer.xml
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.csproj.AssemblyReference.cache
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.GeneratedMSBuildEditorConfig.editorconfig
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.AssemblyInfoInputs.cache
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.AssemblyInfo.cs
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.csproj.CoreCompileInputs.cache
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.MvcApplicationPartsAssemblyInfo.cache
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.RazorAssemblyInfo.cache
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.RazorAssemblyInfo.cs
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\staticwebassets\viewLayer.StaticWebAssets.Manifest.cache
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\staticwebassets\viewLayer.StaticWebAssets.xml
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\scopedcss\bundle\viewLayer.styles.css
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.TagHelpers.input.cache
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.TagHelpers.output.cache
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.RazorCoreGenerate.cache
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.RazorTargetAssemblyInfo.cache
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.RazorTargetAssemblyInfo.cs
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.Views.pdb
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.csproj.CopyComplete
+F:\UniVerSity\STUDY\پایگاه داده\project\phase3\AliBaba\viewLayer\obj\Debug\net5.0\viewLayer.genruntimeconfig.cache
