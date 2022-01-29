@@ -1,0 +1,186 @@
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\appsettings.Development.json
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\appsettings.json
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\alibabaApi.exe
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\alibabaApi.deps.json
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\alibabaApi.runtimeconfig.json
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\alibabaApi.runtimeconfig.dev.json
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\alibabaApi.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\ref\alibabaApi.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\alibabaApi.pdb
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Humanizer.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\System.Runtime.Caching.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.csproj.AssemblyReference.cache
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.GeneratedMSBuildEditorConfig.editorconfig
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.AssemblyInfoInputs.cache
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.AssemblyInfo.cs
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.csproj.CoreCompileInputs.cache
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.MvcApplicationPartsAssemblyInfo.cs
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.MvcApplicationPartsAssemblyInfo.cache
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\staticwebassets\alibabaApi.StaticWebAssets.Manifest.cache
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\staticwebassets\alibabaApi.StaticWebAssets.xml
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\scopedcss\bundle\alibabaApi.styles.css
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.RazorTargetAssemblyInfo.cache
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.csproj.CopyComplete
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\ref\alibabaApi.dll
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.pdb
+F:\Saleh\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.genruntimeconfig.cache
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\appsettings.Development.json
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\appsettings.json
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\alibabaApi.exe
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\alibabaApi.deps.json
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\alibabaApi.runtimeconfig.json
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\alibabaApi.runtimeconfig.dev.json
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\alibabaApi.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\ref\alibabaApi.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\alibabaApi.pdb
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Humanizer.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\System.Runtime.Caching.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.csproj.AssemblyReference.cache
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.GeneratedMSBuildEditorConfig.editorconfig
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.AssemblyInfoInputs.cache
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.AssemblyInfo.cs
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.csproj.CoreCompileInputs.cache
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.MvcApplicationPartsAssemblyInfo.cs
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.MvcApplicationPartsAssemblyInfo.cache
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\staticwebassets\alibabaApi.StaticWebAssets.Manifest.cache
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\staticwebassets\alibabaApi.StaticWebAssets.xml
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\scopedcss\bundle\alibabaApi.styles.css
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.RazorTargetAssemblyInfo.cache
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.csproj.CopyComplete
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\ref\alibabaApi.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.pdb
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi\obj\Debug\net5.0\alibabaApi.genruntimeconfig.cache
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\appsettings.Development.json
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\appsettings.json
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\alibabaApi.exe
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\alibabaApi.deps.json
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\alibabaApi.runtimeconfig.json
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\alibabaApi.runtimeconfig.dev.json
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\alibabaApi.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\ref\alibabaApi.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\alibabaApi.pdb
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\Humanizer.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\Microsoft.OpenApi.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\Newtonsoft.Json.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\System.Runtime.Caching.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\obj\Debug\net5.0\alibabaApi.csproj.AssemblyReference.cache
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\obj\Debug\net5.0\alibabaApi.GeneratedMSBuildEditorConfig.editorconfig
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\obj\Debug\net5.0\alibabaApi.AssemblyInfoInputs.cache
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\obj\Debug\net5.0\alibabaApi.AssemblyInfo.cs
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\obj\Debug\net5.0\alibabaApi.csproj.CoreCompileInputs.cache
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\obj\Debug\net5.0\alibabaApi.MvcApplicationPartsAssemblyInfo.cs
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\obj\Debug\net5.0\alibabaApi.MvcApplicationPartsAssemblyInfo.cache
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\obj\Debug\net5.0\staticwebassets\alibabaApi.StaticWebAssets.Manifest.cache
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\obj\Debug\net5.0\staticwebassets\alibabaApi.StaticWebAssets.xml
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\obj\Debug\net5.0\scopedcss\bundle\alibabaApi.styles.css
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\obj\Debug\net5.0\alibabaApi.RazorTargetAssemblyInfo.cache
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\obj\Debug\net5.0\alibabaApi.csproj.CopyComplete
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\obj\Debug\net5.0\alibabaApi.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\obj\Debug\net5.0\ref\alibabaApi.dll
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\obj\Debug\net5.0\alibabaApi.pdb
+F:\Sal\aDelicious\KarAmuzi\Web API\File\alibabaApi - WebApi - mine\obj\Debug\net5.0\alibabaApi.genruntimeconfig.cache
